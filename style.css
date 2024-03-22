@@ -1,0 +1,111 @@
+*{
+    font-family: 'Segoe UI';
+}
+body{
+    background: #302f2f;
+    color: white;
+}
+.container{
+    width: 1000px;
+    margin: auto; /* div wysrodkowany? how??? */
+}
+h1{
+    text-align: center;
+    font-weight: 100;
+    animation: zoomin 0.5s;
+}
+@keyframes intro {
+    from{
+        opacity: 0;
+        transform: translate(-1000px, 1000px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes zoomin {
+    from{
+        transform: scale(0.1);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+.flex{
+    display: flex;
+}
+.tile{
+    width: 240px;
+    height: 240px;
+    background: #2070FF;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* wtf */
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+.tile .fa{
+    font-size: 60px;
+    margin-top: 10px;
+}
+.tile a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+}
+.tile:hover{
+    box-shadow: 0 0 0 5px white;
+    filter: brightness(120%);
+    transform: scale(1.1);
+}
+a{
+    color: white;
+}
+.woda{
+    width: 500px;
+}
+.center{
+    text-align: center;
+}
+input[type=text], input[type=number]{
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+button{
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    background: rgb(20, 20, 20);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+button:hover{
+    background: rgb(10, 10, 10);
+}
+button:active{
+    background: black;
+}
+.back{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 50px;
+}
+.back:hover{
+    transform: scale(1.1);
+}
