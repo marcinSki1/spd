@@ -9,3 +9,10 @@ function convert() {
 
     document.getElementById('wynik').innerHTML = wynik;
 }
+
+function przetworzAutomatycznie() {
+    const text = document.getElementById('text').value;
+
+
+    document.getElementById('wynik').innerHTML = wynik;
+}
