@@ -13,7 +13,9 @@ function convert() {
 function przetworzAutomatycznie() {
     const text = document.getElementById('text').value;
 
-    text = text.replaceAll(slownik[0].z, slownik[0].na)
+    for (let i = 0; i < slownik.length; i++){
+        text = text.replaceAll(slownik[i].z, slownik[i].na)
+    }
 
     document.getElementById('wynik').innerHTML = text;
 }
